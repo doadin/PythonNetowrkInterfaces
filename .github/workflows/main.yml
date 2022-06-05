@@ -51,7 +51,8 @@ jobs:
 
       - name: Freeze Deluge
         run: |
-          pyinstaller --clean --distpath freeze --log-level DEBUG listinterface.py
+          pyinstaller --clean --distpath .\freeze --log-level DEBUG listinterface.py
+          dir
 
       - uses: actions/upload-artifact@v2
         with:
