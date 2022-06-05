@@ -52,9 +52,9 @@ jobs:
       - name: Freeze Deluge
         run: |
           pyinstaller --clean --distpath .\freeze --log-level DEBUG listinterface.py
-          dir
+          dir ${{ GITHUB_WORKSPACE }}-
 
       - uses: actions/upload-artifact@v2
         with:
           name: listinterface-py${{ matrix.python }}-${{ matrix.arch }}
-          path: freeze/*.exe
+          path: ./freeze/*.exe
