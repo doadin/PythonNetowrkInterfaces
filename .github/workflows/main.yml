@@ -52,7 +52,7 @@ jobs:
       - name: Freeze Deluge
         run: |
           pyinstaller --clean --distpath .\freeze --log-level DEBUG listinterface.py
-          dir ${{ env.GITHUB_WORKSPACE }}
+          dir ${{ env.GITHUB_WORKSPACE }}\freeze
 
       - uses: actions/upload-artifact@v2
         with:
