@@ -54,6 +54,9 @@ jobs:
           pyinstaller --clean --distpath .\freeze --log-level DEBUG listinterface.py
           dir D:\a\PythonNetowrkInterfaces\PythonNetowrkInterfaces\freeze
           7z a -r -tzip listinterface.zip D:\a\PythonNetowrkInterfaces\PythonNetowrkInterfaces\freeze\*.*
+          dir D:\a\PythonNetowrkInterfaces\PythonNetowrkInterfaces
+          dir D:\a\PythonNetowrkInterfaces\PythonNetowrkInterfaces\freeze
+          dir D:\a\PythonNetowrkInterfaces\PythonNetowrkInterfaces\freeze\listinterface
 
       - uses: actions/upload-artifact@v2
         with:
